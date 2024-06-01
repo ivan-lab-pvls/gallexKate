@@ -1,4 +1,3 @@
-
 import 'package:accounting_app/theme/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +10,7 @@ class AppContainer extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(16),
       decoration: BoxDecoration(
-          color: AppColors.darkGrey,
+          color: Color.fromARGB(255, 42, 42, 42),
           borderRadius: BorderRadius.all(Radius.circular(10.0))),
       child: child,
     );

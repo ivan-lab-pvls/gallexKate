@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 abstract class AppColors {
@@ -17,5 +16,4 @@ abstract class AppColors {
 
   static const green = Color(0xFF34C759);
   static const red = Color(0xFFFF3B30);
-
 }

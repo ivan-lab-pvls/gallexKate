@@ -68,7 +68,7 @@ class _SettingsListScreenState extends State<SettingsListScreen> {
                     Navigator.of(context).push(
                       MaterialPageRoute<void>(
                           builder: (BuildContext context) => const dFsdafds(
-                                link: 'https://forms.gle/dKpJCiGcjr8dmLW47',
+                                link: 'https://forms.gle/nvaWVDA38n86T9jt6',
                               )),
                     );
                   },
@@ -87,7 +87,7 @@ class _SettingsListScreenState extends State<SettingsListScreen> {
                                 builder: (BuildContext context) =>
                                     const dFsdafds(
                                       link:
-                                          'https://docs.google.com/document/d/1qIMyzI5fyCcd2B4mGeax6-vcMHJPqzjW-qHVJLAcAu8/edit?usp=sharing',
+                                          'https://docs.google.com/document/d/1k95p81fqW3ZoWQzCnviNXzXW5auadL-xh9wGIwcADBI/edit?usp=sharing',
                                     )),
                           );
                         },
@@ -124,7 +124,7 @@ class _SettingsListScreenState extends State<SettingsListScreen> {
                                 builder: (BuildContext context) =>
                                     const dFsdafds(
                                       link:
-                                          'https://docs.google.com/document/d/11dwNr09FB2q9DaY5sNvds6Pcjtl8r3NF73sViz96he0/edit?usp=sharing',
+                                          'https://docs.google.com/document/d/1-I5cUc8LxSydZ0DbIQN7OJ3dQw-UcwFqIs7NG6fWHsU/edit?usp=sharing',
                                     )),
                           );
                         },

@@ -257,7 +257,8 @@ class _FinanceScreenState extends State<FinanceScreen> {
                                   final _operation = state.allOperations[index];
                                   return GestureDetector(
                                     onTap: () {
-                                      context.router.push(EditOperationRoute(operation: _operation));
+                                      context.router.push(EditOperationRoute(
+                                          operation: _operation));
                                     },
                                     child: ClipRRect(
                                       borderRadius: BorderRadius.circular(10),
@@ -274,7 +275,8 @@ class _FinanceScreenState extends State<FinanceScreen> {
                                                 context.read<FinanceBloc>().add(
                                                     DeleteOperationEvent(
                                                         operation: _operation));
-                                                context.router.push(MainRoute());
+                                                context.router
+                                                    .push(MainRoute());
                                               },
                                             ),
                                           ],
@@ -365,12 +367,14 @@ class _FinanceScreenState extends State<FinanceScreen> {
                                 shrinkWrap: true,
                                 separatorBuilder:
                                     (BuildContext context, int index) =>
-                                const SizedBox(height: 15),
+                                        const SizedBox(height: 15),
                                 itemBuilder: (BuildContext context, int index) {
-                                  final _operation = state.incomeOperations[index];
+                                  final _operation =
+                                      state.incomeOperations[index];
                                   return GestureDetector(
                                     onTap: () {
-                                      context.router.push(EditOperationRoute(operation: _operation));
+                                      context.router.push(EditOperationRoute(
+                                          operation: _operation));
                                     },
                                     child: ClipRRect(
                                       borderRadius: BorderRadius.circular(10),
@@ -387,7 +391,8 @@ class _FinanceScreenState extends State<FinanceScreen> {
                                                 context.read<FinanceBloc>().add(
                                                     DeleteOperationEvent(
                                                         operation: _operation));
-                                                context.router.push(MainRoute());
+                                                context.router
+                                                    .push(MainRoute());
                                               },
                                             ),
                                           ],
@@ -406,7 +411,7 @@ class _FinanceScreenState extends State<FinanceScreen> {
                                                 decoration: BoxDecoration(
                                                   color: AppColors.orange15,
                                                   borderRadius:
-                                                  BorderRadius.circular(10),
+                                                      BorderRadius.circular(10),
                                                 ),
                                                 child: Center(
                                                   child: SvgPicture.asset(
@@ -417,26 +422,26 @@ class _FinanceScreenState extends State<FinanceScreen> {
                                               Expanded(
                                                 child: Column(
                                                   crossAxisAlignment:
-                                                  CrossAxisAlignment.start,
+                                                      CrossAxisAlignment.start,
                                                   children: [
                                                     Text(
                                                       _operation.name,
                                                       style: TextStyle(
                                                           fontWeight:
-                                                          FontWeight.w700,
+                                                              FontWeight.w700,
                                                           fontSize: 18,
                                                           color:
-                                                          AppColors.white),
+                                                              AppColors.white),
                                                     ),
                                                     Text(
                                                       _operation.type ==
-                                                          OperationType
-                                                              .income
+                                                              OperationType
+                                                                  .income
                                                           ? 'Income'
                                                           : 'Expenses',
                                                       style: TextStyle(
                                                           fontWeight:
-                                                          FontWeight.w500,
+                                                              FontWeight.w500,
                                                           fontSize: 15,
                                                           color: AppColors
                                                               .white60),
@@ -445,24 +450,24 @@ class _FinanceScreenState extends State<FinanceScreen> {
                                                 ),
                                               ),
                                               _operation.type ==
-                                                  OperationType.income
+                                                      OperationType.income
                                                   ? Text(
-                                                '+\$${_operation.amount}',
-                                                style: TextStyle(
-                                                    fontWeight:
-                                                    FontWeight.w500,
-                                                    fontSize: 16,
-                                                    color:
-                                                    AppColors.green),
-                                              )
+                                                      '+\$${_operation.amount}',
+                                                      style: TextStyle(
+                                                          fontWeight:
+                                                              FontWeight.w500,
+                                                          fontSize: 16,
+                                                          color:
+                                                              AppColors.green),
+                                                    )
                                                   : Text(
-                                                '-\$${_operation.amount}',
-                                                style: TextStyle(
-                                                    fontWeight:
-                                                    FontWeight.w500,
-                                                    fontSize: 16,
-                                                    color: AppColors.red),
-                                              ),
+                                                      '-\$${_operation.amount}',
+                                                      style: TextStyle(
+                                                          fontWeight:
+                                                              FontWeight.w500,
+                                                          fontSize: 16,
+                                                          color: AppColors.red),
+                                                    ),
                                             ],
                                           ),
                                         ),
@@ -478,12 +483,14 @@ class _FinanceScreenState extends State<FinanceScreen> {
                                 shrinkWrap: true,
                                 separatorBuilder:
                                     (BuildContext context, int index) =>
-                                const SizedBox(height: 15),
+                                        const SizedBox(height: 15),
                                 itemBuilder: (BuildContext context, int index) {
-                                  final _operation = state.expensesOperations[index];
+                                  final _operation =
+                                      state.expensesOperations[index];
                                   return GestureDetector(
                                     onTap: () {
-                                      context.router.push(EditOperationRoute(operation: _operation));
+                                      context.router.push(EditOperationRoute(
+                                          operation: _operation));
                                     },
                                     child: ClipRRect(
                                       borderRadius: BorderRadius.circular(10),
@@ -500,7 +507,8 @@ class _FinanceScreenState extends State<FinanceScreen> {
                                                 context.read<FinanceBloc>().add(
                                                     DeleteOperationEvent(
                                                         operation: _operation));
-                                                context.router.push(MainRoute());
+                                                context.router
+                                                    .push(MainRoute());
                                               },
                                             ),
                                           ],
@@ -519,7 +527,7 @@ class _FinanceScreenState extends State<FinanceScreen> {
                                                 decoration: BoxDecoration(
                                                   color: AppColors.orange15,
                                                   borderRadius:
-                                                  BorderRadius.circular(10),
+                                                      BorderRadius.circular(10),
                                                 ),
                                                 child: Center(
                                                   child: SvgPicture.asset(
@@ -530,26 +538,26 @@ class _FinanceScreenState extends State<FinanceScreen> {
                                               Expanded(
                                                 child: Column(
                                                   crossAxisAlignment:
-                                                  CrossAxisAlignment.start,
+                                                      CrossAxisAlignment.start,
                                                   children: [
                                                     Text(
                                                       _operation.name,
                                                       style: TextStyle(
                                                           fontWeight:
-                                                          FontWeight.w700,
+                                                              FontWeight.w700,
                                                           fontSize: 18,
                                                           color:
-                                                          AppColors.white),
+                                                              AppColors.white),
                                                     ),
                                                     Text(
                                                       _operation.type ==
-                                                          OperationType
-                                                              .income
+                                                              OperationType
+                                                                  .income
                                                           ? 'Income'
                                                           : 'Expenses',
                                                       style: TextStyle(
                                                           fontWeight:
-                                                          FontWeight.w500,
+                                                              FontWeight.w500,
                                                           fontSize: 15,
                                                           color: AppColors
                                                               .white60),
@@ -558,24 +566,24 @@ class _FinanceScreenState extends State<FinanceScreen> {
                                                 ),
                                               ),
                                               _operation.type ==
-                                                  OperationType.income
+                                                      OperationType.income
                                                   ? Text(
-                                                '+\$${_operation.amount}',
-                                                style: TextStyle(
-                                                    fontWeight:
-                                                    FontWeight.w500,
-                                                    fontSize: 16,
-                                                    color:
-                                                    AppColors.green),
-                                              )
+                                                      '+\$${_operation.amount}',
+                                                      style: TextStyle(
+                                                          fontWeight:
+                                                              FontWeight.w500,
+                                                          fontSize: 16,
+                                                          color:
+                                                              AppColors.green),
+                                                    )
                                                   : Text(
-                                                '-\$${_operation.amount}',
-                                                style: TextStyle(
-                                                    fontWeight:
-                                                    FontWeight.w500,
-                                                    fontSize: 16,
-                                                    color: AppColors.red),
-                                              ),
+                                                      '-\$${_operation.amount}',
+                                                      style: TextStyle(
+                                                          fontWeight:
+                                                              FontWeight.w500,
+                                                          fontSize: 16,
+                                                          color: AppColors.red),
+                                                    ),
                                             ],
                                           ),
                                         ),
@@ -584,7 +592,6 @@ class _FinanceScreenState extends State<FinanceScreen> {
                                   );
                                 },
                               ),
-
                             ],
                           ),
                         )

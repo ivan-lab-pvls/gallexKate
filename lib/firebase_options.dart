@@ -63,6 +63,6 @@ class DefaultFirebaseOptions {
     messagingSenderId: '719862443739',
     projectId: 'accounting-app-6aea0',
     storageBucket: 'accounting-app-6aea0.appspot.com',
-    iosBundleId: 'com.fuiqrew.frexa.utils',
+    iosBundleId: 'com.gazbu.profit.app',
   );
 }

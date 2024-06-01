@@ -1,4 +1,4 @@
-package com.fuiqrew.frexa.utils
+package com.gazbu.profit.app
 
 import io.flutter.embedding.android.FlutterActivity
 
